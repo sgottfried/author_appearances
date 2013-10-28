@@ -18,7 +18,7 @@ class AuthorsViewController < UITableViewController
     cell = table_view.dequeueReusableCellWithIdentifier(cell_identifier) ||
       UITableViewCell.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier:cell_identifier)
 
-    cell.textLabel.text = @authors[index_path.row]
+    cell.textLabel.text = @authors[index_path.row].name
     cell
   end
 

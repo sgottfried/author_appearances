@@ -1,7 +1,10 @@
 describe 'AuthorsViewController' do
   tests AuthorsViewController
 
-  @authors = ['author1', 'author2', 'author3']
+  @author1 = Author.new('author1')
+  @author2 = Author.new('author2')
+  @author3 = Author.new('author3')
+  @authors = [@author1, @author2, @author3]
 
   def controller
     AuthorsViewController.alloc.initWithAuthors(@authors)
@@ -13,7 +16,7 @@ describe 'AuthorsViewController' do
 
   it 'should add the authors name for each cell' do
     @authors.each do |author|
-      view(author).should != nil
+      view(author.name).should != nil
     end
   end
 end
