@@ -5,14 +5,14 @@ class Author
     @name = name
   end
 
-  def all
+  def self.all
     [
-     Author.new('Ernest Hemingway'), 
-     Author.new('Cassandra Clare'),
-     Author.new('Stephen King'),
-     Author.new('Karen Kingsbury'),
-     Author.new('Walter Isaacson'),
-     Author.new('Jude Deveraux')
+     Author.new('Morgan Jones'), 
+     Author.new('Damien Lewis'),
+     Author.new('Diane Setterfield'),
+     Author.new('Piers Morgan'),
+     Author.new('Hannah Luce'),
+     Author.new('William Kent Kreuger')
     ]
   end
 end
