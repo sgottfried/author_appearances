@@ -31,5 +31,4 @@ class AuthorsViewController < UITableViewController
     appearances_controller = AppearancesViewController.alloc.initWithAppearances(author.appearances)
     self.navigationController.pushViewController(appearances_controller, animated:true)
   end
-
 end

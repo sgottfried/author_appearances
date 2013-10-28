@@ -7,6 +7,7 @@ require 'guard/motion'
 require 'motion-stump'
 require 'sugarcube-repl'
 require 'sugarcube-uikit'
+require 'sugarcube-color'
 require 'teacup'
 require 'sweettea'
 begin

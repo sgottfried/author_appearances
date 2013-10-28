@@ -25,4 +25,10 @@ class AppearancesViewController < UITableViewController
   def tableView(tableView, numberOfRowsInSection:section)
     @appearances.length
   end
+
+  def tableView(table_view, didSelectRowAtIndexPath:index_path)
+    appearance = @appearances[index_path.row]
+    appearance_controller = AppearanceViewController.alloc.initWithAppearance(appearance)
+    self.navigationController.pushViewController(appearance_controller, animated:true)
+  end
 end
