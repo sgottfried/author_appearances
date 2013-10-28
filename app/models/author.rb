@@ -15,4 +15,10 @@ class Author
      Author.new('William Kent Kreuger')
     ]
   end
+
+  def appearances
+    appearance = Appearance.new
+    appearance.name = 'CBS-TV'
+    [appearance, appearance, appearance]
+  end
 end

@@ -25,4 +25,11 @@ class AuthorsViewController < UITableViewController
   def tableView(tableView, numberOfRowsInSection:section)
     @authors.length
   end
+
+  def tableView(table_view, didSelectRowAtIndexPath:index_path)
+    author = @authors[index_path.row]
+    appearances_controller = AppearancesViewController.alloc.initWithAppearances(author.appearances)
+    self.navigationController.pushViewController(appearances_controller, animated:true)
+  end
+
 end
