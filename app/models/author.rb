@@ -17,8 +17,7 @@ class Author
   end
 
   def appearances
-    appearance = Appearance.new
-    appearance.name = 'CBS-TV'
+    appearance = Appearance.new('CBS-TV', '524 W 57th St.', '7 Floor', 'New York', 'NY')
     [appearance, appearance, appearance]
   end
 end

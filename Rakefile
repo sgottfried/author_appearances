@@ -10,6 +10,8 @@ require 'sugarcube-uikit'
 require 'sugarcube-color'
 require 'teacup'
 require 'sweettea'
+require 'map-kit-wrapper'
+
 begin
   require 'bundler'
   Bundler.require
@@ -19,4 +21,5 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'Author Appearances'
+  app.frameworks += ['MapKit']
 end

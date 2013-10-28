@@ -3,6 +3,7 @@ GEM
   specs:
     celluloid (0.15.2)
       timers (~> 1.1.0)
+    codependency (2.0.0)
     coderay (1.0.9)
     ffi (1.8.1)
     formatador (0.2.4)
@@ -20,6 +21,9 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     lumberjack (1.0.3)
+    map-kit-wrapper (0.0.5)
+      codependency (= 2.0.0)
+      rake
     method_source (0.8.1)
     motion-stump (0.3.0)
     pry (0.9.12.2)
@@ -45,6 +49,7 @@ PLATFORMS
 
 DEPENDENCIES
   guard-motion
+  map-kit-wrapper
   motion-stump
   rake
   sugarcube

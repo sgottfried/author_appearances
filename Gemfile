@@ -6,5 +6,5 @@ gem 'motion-stump'
 gem 'sugarcube'
 gem 'teacup'
 gem 'sweettea'
-
+gem 'map-kit-wrapper'
 # Add your dependencies here:

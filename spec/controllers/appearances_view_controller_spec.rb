@@ -1,10 +1,8 @@
 describe 'AppearancesViewController' do
   tests AppearancesViewController
 
-  @appearance1 = Appearance.new
-  @appearance1.name = 'appearance 1'
-  @appearance2 = Appearance.new
-  @appearance2.name = 'appearance 2'
+  @appearance1 = Appearance.new('appearance 1', '123 fake street', '5th floor', 'Springfield', 'IL')
+  @appearance2 = Appearance.new('appearance 2', '456 fake avenue', '6th floor', 'Bedrock', 'IL')
 
   @appearances = [@appearance1, @appearance2]
 
