@@ -15,7 +15,7 @@ class AppearanceViewController < UIViewController
     super
     layout(self.view, :root) do
       map_view = subview(MapView, :map_view)
-      map_view.region = CoordinateRegion.new([40.67, -73.94], [3.1, 3.1])
+      map_view.region = CoordinateRegion.new([44.0531, -122.9911], [0.5,0.5])
       map_view.shows_user_location = true
       name_label = subview(UILabel, :name_label)
       name_label.text = @appearance.name
@@ -26,8 +26,8 @@ class AppearanceViewController < UIViewController
       street_address_2_label = subview(UILabel, :street_address_2_label)
       street_address_2_label.text = @appearance.street_address_2
 
-      city_and_state_label = subview(UILabel, :city_and_state_label)
-      city_and_state_label.text = @appearance.city_and_state
+      city_state_zipcode_label = subview(UILabel, :city_state_zipcode_label)
+      city_state_zipcode_label.text = @appearance.city_state_and_zipcode
     end
   end
 end

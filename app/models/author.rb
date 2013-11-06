@@ -7,17 +7,16 @@ class Author
 
   def self.all
     [
-     Author.new('Morgan Jones'), 
-     Author.new('Damien Lewis'),
-     Author.new('Diane Setterfield'),
-     Author.new('Piers Morgan'),
-     Author.new('Hannah Luce'),
-     Author.new('William Kent Kreuger')
+     Author.new('Homer Simpson'), 
+     Author.new('Peter Griffin'),
+     Author.new('Eric Cartman'),
+     Author.new('Fred Flintstone'),
+     Author.new('George Jetson'),
     ]
   end
 
   def appearances
-    appearance = Appearance.new('CBS-TV', '524 W 57th St.', '7 Floor', 'New York', 'NY')
+    appearance = Appearance.new('Simpson House', '742 Evergreen Terrace', 'Springfield', 'OR', '97477')
     [appearance, appearance, appearance]
   end
 end

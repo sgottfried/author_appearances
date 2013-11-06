@@ -24,6 +24,6 @@ describe 'AppearanceViewController' do
   end
 
   it 'should contain a city and state line for the appearance' do
-    view(@appearance.city_and_state).should != nil
+    view(@appearance.city_state_and_zipcode).should != nil
   end
 end
